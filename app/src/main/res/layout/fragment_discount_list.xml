@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Main fragment showing the input text fields and intersection list. -->
+    <data>
+        <!-- IntersectionViewModel variable used to manage data on the fragment. -->
+        <variable
+            name="discountViewModel"
+            type="com.example.lico.discountlist.DiscountViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <!--        &lt;!&ndash; @= indicates that value in the edit text is copied to the ViewModel's name &ndash;&gt;-->
+        <!--        <EditText-->
+        <!--            android:id="@+id/name"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginEnd="10dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="Name"-->
+        <!--            android:inputType="textPersonName"-->
+        <!--            android:minHeight="48dp"-->
+        <!--            android:text="@={discountViewModel.name}"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--        &lt;!&ndash; @= indicates that value in the edit text is copied to the ViewModel's location &ndash;&gt;-->
+        <!--        <EditText-->
+        <!--            android:id="@+id/location"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginEnd="10dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="Location"-->
+        <!--            android:inputType="textPersonName"-->
+        <!--            android:minHeight="48dp"-->
+        <!--            android:text="@={discountViewModel.location}"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/name" />-->
+
+        <!--        &lt;!&ndash; @= indicates that value in the edit text is copied to the ViewModel's location &ndash;&gt;-->
+        <!--        <EditText-->
+        <!--            android:id="@+id/totalDiscount"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginEnd="10dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="Discount Amount"-->
+        <!--            android:inputType="textPersonName"-->
+        <!--            android:minHeight="48dp"-->
+        <!--            android:text="@={discountViewModel.totalDiscount}"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/location" />-->
+
+        <!--        &lt;!&ndash; @= indicates that value in the edit text is copied to the ViewModel's location &ndash;&gt;-->
+        <!--        <EditText-->
+        <!--            android:id="@+id/couponCode"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginEnd="10dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="Coupon Code"-->
+        <!--            android:inputType="textPersonName"-->
+        <!--            android:minHeight="48dp"-->
+        <!--            android:text="@={discountViewModel.couponCode}"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/totalDiscount" />-->
+
+        <!--        &lt;!&ndash; onClick accepts a lambda function indicated by () -> The body-->
+        <!--             of the lambda function calls the insert function-->
+        <!--         &ndash;&gt;-->
+        <!--        <Button-->
+        <!--            android:id="@+id/add_intersection"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginEnd="10dp"-->
+        <!--            android:onClick="@{() -> discountViewModel.insert()}"-->
+        <!--            android:text="Add discount"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/couponCode" />-->
+
+        <!--        &lt;!&ndash; onClick accepts a lambda function indicated by () -> The body-->
+        <!--             of the lambda function calls the clear function-->
+        <!--         &ndash;&gt;-->
+<!--                <Button-->
+<!--                    android:id="@+id/clear"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:onClick="@{()-> discountViewModel.clear()}"-->
+<!--                    android:text="Clear"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/discountLabel"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:text="Discounts"-->
+<!--                    android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/clear" />-->
+
+        <!-- Recycler view that shows the list of discounts. -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/discount_recyclerview"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.321"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

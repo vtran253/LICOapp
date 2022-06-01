@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Lico</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="discount_message">Here are your hand picked Discounts!</string>
+    <string name="event_message">Share local events!</string>
+    <string name="add_message">Add local events!</string>
+    <string name="welcome_to_lico">Welcome to Lico</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="resources">Resources</string>
+
+    //Resources Array
+    <string-array name="resourceArray">
+        <item>Fullerton City Hall</item>
+        <item>Fullerton Community Center</item>
+        <item>Housing and Neighborhood Services</item>
+        <item>Financial Assistance</item>
+        <item>Food Assistance</item>
+        <item>Health Care</item>
+        <item>Employment Services</item>
+        <item>Parenting and Childcare</item>
+        <item>Contact Us</item>
+    </string-array>
+
+    //Discounts Array
+    <string-array name="discountArray">
+        <item>Walmart: 88 E Orangethorpe Ave, Anaheim, CA 92801: 25%: 324I5UBF</item>
+        <item>Target: 200 W Orangethorpe Ave, Fullerton, CA 92832: 30%: 534AG35A</item>
+        <item>Walgreens: 1826 W Orangethorpe Ave, Fullerton, CA 92833: 20%: 86GA4G6A</item>
+        <item>Black Bear Diner: 1011 N Harbor Blvd, Fullerton, CA 92832: 10%: A658G4A5</item>
+        <item>Pizza Hut: 400 E Commonwealth Ave, Fullerton, CA 92832: 15%: GS5H874S</item>
+        <item>Titan Shops: 800 N State College Blvd, Fullerton, CA 92831: 40%: G468SAD54</item>
+        <item>Pollys Pies: 136 N Raymond Ave, Fullerton, CA 92831: 15%: 18765AG5</item>
+        <item>Barnes n Noble: Amerige Heights Town Center, 1923 W Malvern Ave, Fullerton, CA 92833: 20%: HYS6584F</item>
+        <item>The Home Depot: 625 S Placentia Ave, Fullerton, CA 92831: 20%: SGFH6815</item>
+    </string-array>
+
+</resources>

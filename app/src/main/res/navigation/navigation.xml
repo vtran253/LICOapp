@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/homepage"
+        android:name="com.example.lico.Homepage"
+        android:label="Homepage"
+        tools:layout="@layout/fragment_homepage" >
+        <action
+            android:id="@+id/action_homepage_to_resource"
+            app:destination="@id/resource" />
+        <action
+            android:id="@+id/action_homepage_to_discountListFragment"
+            app:destination="@id/discountListFragment" />
+        <action
+            android:id="@+id/action_homepage_to_eventsListFragment"
+            app:destination="@id/eventsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resource"
+        android:name="com.example.lico.resourceItems.Resource"
+        android:label="Resources"
+        tools:layout="@layout/fragment_resource" >
+        <argument
+            android:name="resourceId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/discountListFragment"
+        android:name="com.example.lico.discountlist.DiscountListFragment"
+        android:label="Exclusive Discounts" >
+        <action
+            android:id="@+id/action_discountListFragment_to_discountItemFragment"
+            app:destination="@id/discountItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/discountItemFragment"
+        android:name="com.example.lico.discountitems.DiscountItemFragment">
+        <argument
+            android:name="discountId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventsListFragment"
+        android:name="com.example.lico.eventsList.EventsListFragment"
+        android:label="EventsListFragment" >
+        <action
+            android:id="@+id/action_eventsListFragment_to_eventsItemFragment"
+            app:destination="@id/eventsItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventsItemFragment"
+        android:name="com.example.lico.eventsItems.EventsItemFragment"
+        android:label="EventsItemFragment" >
+        <argument android:name="eventsId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.lico.login"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_homepage"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_login_to_register2"
+            app:destination="@id/register2" />
+    </fragment>
+    <fragment
+        android:id="@+id/register2"
+        android:name="com.example.lico.Register"
+        android:label="Register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register2_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_register2_to_login2"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_register2_to_homepage"
+            app:destination="@id/homepage" />
+    </fragment>
+
+
+</navigation>
